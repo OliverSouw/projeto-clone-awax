@@ -18,6 +18,10 @@ header {
     height: 100px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header {
     width: 1140px;
     height: 100%;
@@ -33,8 +37,9 @@ header {
 .logo-img {
     width: 60px;
     height: 60px;
-    background-color: #b78a56;
+    background: linear-gradient(-225deg, #503e2d, #b78a56, #0e0b08);
     border-radius: 20px 30px 20px 5px;
+    border: 2px solid #8d765e;
 }
 
 .menu {
@@ -54,7 +59,6 @@ header {
 
 .menu a {
     color: #fff;
-    text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
     display: flex;
@@ -75,11 +79,10 @@ header {
     background-color: #b78a56;
     color: #fff;
     text-transform: uppercase;
-    font-size: 8px;
+    font-size: 12px;
     font-weight: bold;
-    text-decoration: none;
-    padding: 10px 35px;
-    border-radius: 20px;
+    padding: 15px 35px;
+    border-radius: 25px;
     margin-top: 30px;
 }
 
@@ -263,3 +266,94 @@ SERVICES
     font-size: 14px;
     color: #999;
 }
+
+/*
+PROJECTS
+*/
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-projects-filters {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 0 25px;
+    border-radius: 30px;
+    display: inline-block;    
+}
+
+.section-projects-filters li{
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-left: 1px solid #ccc;
+    border-bottom: 3px solid #eee;
+}
+
+    .section-projects-filters li:hover {
+        border-bottom: 3px solid #b78a56;
+    }   
+
+.section-projects-filters li:first-child {
+    border-left: 0;
+}
+
+.section-projects-filters a {
+    color: #555;
+    font-weight: 600;
+}
+
+.section-projects-photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-projects-photo {
+    width: 280px;
+}
+
+.section-projects-photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.section-projects-photoarea img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px 0;
+}
+
+.section-projects-photoinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 40px 0;
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0 20px;
+    text-align: center;
+    gap: 10px;
+}
+
+.section-projects-photoinfo h5 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+    .section-projects-photoarea:hover .section-projects-photoinfo {
+        display: flex;
+    }
