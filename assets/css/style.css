@@ -69,6 +69,20 @@ header {
     }
 
 /* Main */ 
+
+.button {
+    display: inline-block;
+    background-color: #b78a56;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
 .banner {
     height: calc(100vh - 100px);
     background-color: #333;
@@ -115,19 +129,6 @@ header {
     margin-top: 5px;
 }
 
-.banner a {
-    display: block;
-    background-color: #b78a56;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 35px;
-    border-radius: 20px;
-    margin-top: 30px;
-}
-
 .banner .sliders-pointers {
     width: 100vw;
     height: 20px;
@@ -160,7 +161,8 @@ header {
     background-color: #f7f7f7;
 }
 
-.default.light .section-title {
+.default.light .section-title,
+.default.light .section-body {
     color: #000;
 }
 
@@ -168,7 +170,8 @@ header {
     background-color: #000;
 }
 
-.default.dark .section-title {
+.default.dark .section-title,
+.default.dark .section-body {
     color: #fff;
 }
 
@@ -193,7 +196,39 @@ header {
 .default .section-body {
     margin: auto;
     max-width: 1140px;
-    min-height: 100px;
-    background-color: #ccc;
+}
+
+/*
+ABOUT US
+*/
+
+.section-aboutus {
+    display: flex;
+    align-items: center;
+}
+
+.section-aboutus-left {
+    flex: 1;
+}
+
+.section-aboutus-left p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.section-aboutus-right {
+    width: 520px;
+    text-align: center;
+}
+
+.section-aboutus-right img {
+    width: 480px;
+    box-shadow: 0 5px 10px #333;
+    border-radius: 20px;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+.section-aboutus-right img:hover {
+    filter: none;
 }
 
