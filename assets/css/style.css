@@ -22,6 +22,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 .header {
     width: 1140px;
     height: 100%;
@@ -610,3 +614,95 @@ PRICES
     .button-dark:hover {
         background-color: #b78a56;
     }
+
+/*
+PREMIUM
+*/
+
+.section-premium {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.section-aboutus {
+    display: flex;
+    align-items: center;
+}
+
+.section-premium-left {
+    width: 45%;
+    display: flex;
+
+}
+
+.section-premium-left img {
+    width: 300px;
+    margin: auto;
+}
+
+.section-premium-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.premium-features {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.premium-features img {
+    width: 30px;
+    height: 25px;
+}
+
+.premium-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.premium-text {
+    color: #777;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.premium-list {
+    color: #777;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.premium-border {
+    border-bottom: 1px solid #aaa;
+}
+
+.premium .sliders-pointers {
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.premium .pointer {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #b78a56;
+    border-radius: 5px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.premium .pointer.active {
+    background-color: #b78a56;
+}
+
+.premium-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
