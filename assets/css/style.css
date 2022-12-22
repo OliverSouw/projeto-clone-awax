@@ -706,3 +706,200 @@ PREMIUM
     flex-direction: column;
     align-items: center;
 }
+
+/*
+SOME FACTS
+*/
+
+.section-some-facts {
+    display: flex;
+}
+
+.section-facts {
+    flex: 1;
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.section-facts h2 {
+    font-size: 38px;
+    color: #b78a56;
+}
+
+.border-facts {
+    width: 20px;
+    height: 2px;
+    background-color: #999;
+    border-radius: 40px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.section-facts h4 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 0 14px;
+    height: 50px;
+}
+
+.section-facts p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+/*
+SOCIAL MEDIAS
+*/
+
+.section-social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.section-social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 13px;
+}
+
+.section-social-share {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 50px;
+}
+
+.section-social-share p {
+    text-transform: uppercase;
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 20px;
+}
+
+.social-icon p {
+    font-size: 10px;
+}
+
+.social-twitter a {
+    background-color: #00acee;
+}
+
+.social-linkedin a {
+    background-color: #0e76a8;
+}
+
+.social-facebook a {
+    background-color: #3b5998;
+}   
+
+.social-googleplus a {
+    background-color: #db4a39;
+}
+
+.social-pinterest a {
+    background-color: #c8232c;
+}
+
+/*
+CONTACT US
+*/
+
+.section-contactus {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-contactus input {
+    border: none;
+    border-bottom: 1px solid #777;
+    background-color: #ddd;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.section-contactus input::placeholder {
+    font-size: 12px;
+}
+
+.section-contactus input[type=email] {
+    margin-left: 30px;
+}
+
+.form-subject {
+    width: 100%;
+    margin: 20px 0 40px 0;
+}
+
+.form-message {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.section-contactus input[type=submit] {
+    display: inline-block;
+    background-color: #b78a56;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px 35px;
+    border-radius: 25px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.section-map {
+    background-image: url(../images/mapa.PNG);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1);
+    padding: 30px 0;
+}
+
+.section-map-area {
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.section-map-info {
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    color: #000;
+}
+
+.section-map-info-item {
+    display: flex;
+}
+
+.section-map-info-item-img {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #ccc;
+    padding: 15px;
+}
+
+/* .section-map-info-item-img img{
+    width: 20px;
+} */
