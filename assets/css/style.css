@@ -46,6 +46,10 @@ li {
     border: 2px solid #8d765e;
 }
 
+.menu-opener {
+    display: none;
+}
+
 .menu {
     flex: 1;
     display: flex;
@@ -76,7 +80,9 @@ li {
         color: #ccc;
     }
 
-/* Main */ 
+/* 
+MAIN ----------------------------------------------------------
+*/ 
 
 .button {
     display: inline-block;
@@ -216,7 +222,7 @@ li {
 }
 
 /*
-ABOUT US
+ABOUT US ----------------------------------------------------------
 */
 
 .section-aboutus {
@@ -250,7 +256,7 @@ ABOUT US
 }
 
 /*
-SERVICES
+SERVICES ----------------------------------------------------------
 */
 
 .section-services {
@@ -282,7 +288,7 @@ SERVICES
 }
 
 /*
-PROJECTS
+PROJECTS ----------------------------------------------------------
 */
 
 .section-projects {
@@ -476,7 +482,7 @@ PROJECTS
     }
 
 /*
-CLIENTS
+CLIENTS ----------------------------------------------------------
 */
 
 .soft-light {
@@ -529,7 +535,7 @@ CLIENTS
 }
 
 /*
-PARTNERS
+PARTNERS ----------------------------------------------------------
 */
 
 .section-partners {
@@ -552,7 +558,7 @@ PARTNERS
 }
 
 /*
-PRICES
+PRICES ----------------------------------------------------------
 */
 
 .card-prices {
@@ -626,7 +632,7 @@ PRICES
     }
 
 /*
-PREMIUM
+PREMIUM ----------------------------------------------------------
 */
 
 .section-premium {
@@ -718,7 +724,7 @@ PREMIUM
 }
 
 /*
-SOME FACTS
+SOME FACTS ----------------------------------------------------------
 */
 
 .section-some-facts {
@@ -760,7 +766,7 @@ SOME FACTS
 }
 
 /*
-SOCIAL MEDIAS
+SOCIAL MEDIAS ----------------------------------------------------------
 */
 
 .section-social-media {
@@ -826,7 +832,7 @@ SOCIAL MEDIAS
 }
 
 /*
-CONTACT US
+CONTACT US ----------------------------------------------------------
 */
 
 .section-contactus {
@@ -874,6 +880,10 @@ CONTACT US
     cursor: pointer;
 }
 
+/*
+MAP ----------------------------------------------------------
+*/
+
 .section-map {
     background-image: url(../images/mapa.PNG);
     background-size: cover;
@@ -917,6 +927,10 @@ CONTACT US
 .section-map-info-item-img img{
     width: 20px;
 }
+
+/*
+FOOTER ----------------------------------------------------------
+*/
 
 .section-footer {
     display: flex;
@@ -997,6 +1011,45 @@ CONTACT US
 .section-footer-form input::placeholder {
     font-size: 14px;
     text-transform: uppercase;
-    text-align: center;
-    
+    text-align: center; 
+}
+
+/*
+RESPONSIVIDADE ----------------------------------------------------------
+*/
+
+@media (min-width:450px) and (max-width:800px) {
+    .menu-opener {
+        display: block;
+        width: 30px;
+    }
+
+    nav{
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 40vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 100%;
+    }
+
+    .menu a{
+        border: 0;
+        height: 20px;
+        margin-left: 50px;
+    }
+
+        .menu a:hover {
+            color: #b78a56;
+            font-size: bold;
+            border: 0;
+        }
 }
