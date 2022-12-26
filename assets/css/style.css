@@ -924,6 +924,14 @@ CONTACT US
 
 .section-footer-social-media {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-footer-social-bottom {
+    text-transform: uppercase;
+    font-size: bold;
 }
 
 .section-footer-text {
@@ -940,14 +948,13 @@ CONTACT US
 }
 
 .section-footer {
-    width: 100vw;
-    padding: 20px 50px;
+    padding: 20px 0;
     color: #fff;
 }
 
 .section-footer-social {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .section-footer-social a {
@@ -956,10 +963,40 @@ CONTACT US
     align-items: center;
     width: 25px;
     height: 25px;
-    background-color: #999;
+    background-color: #333;
     border-radius: 13px;
 }
 
     .section-footer-social a:hover {
         background-color: #b78a56;
     }
+
+.section-footer-text {
+    font-size: 14px;
+    color: #555;
+    padding-right: 30px;
+}
+
+.section-footer-form {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 35px 0;
+}
+
+.section-footer-form input {
+    background-color: #333;
+    border: 0;
+    border-bottom: 2px solid #999;
+    padding: 0 20px 10px 20px;
+}
+
+.section-footer-form input::placeholder {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
