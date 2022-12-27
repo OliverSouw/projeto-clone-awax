@@ -1018,13 +1018,24 @@ FOOTER ----------------------------------------------------------
 RESPONSIVIDADE ----------------------------------------------------------
 */
 
-@media (min-width:450px) and (max-width:800px) {
+@media (min-width:460px) and (max-width:800px) {
+
+    .logo {
+        margin-left: 40px;
+    }
+
     .menu-opener {
         display: block;
         width: 30px;
+        margin-right: 40px;
+    }
+
+    .header {
+        max-width: 100%;
     }
 
     nav{
+        display: none;
         position: absolute;
         z-index: 99;
         background-color: rgba(0, 0, 0, 0.8);
@@ -1052,4 +1063,340 @@ RESPONSIVIDADE ----------------------------------------------------------
             font-size: bold;
             border: 0;
         }
+
+    .banner {
+        height: 100vh;
+    }
+
+    /*
+    ABOUT US
+    */
+
+    .section-aboutus {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-aboutus-left {
+        margin: 0 40px 30px 40px;
+    }
+
+    /*
+    SERVICES
+    */
+
+    .section-services {
+        flex-wrap: wrap;
+    }
+
+    .section-service {
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+
+    /*
+    OUR PROJECTS
+    */
+
+    .section-projects {
+        width: 90%;
+        margin: auto;
+    }
+
+    .section-projects-filters li {
+        padding: 10px 10px;
+    }
+
+    /*
+    OUR TEAM
+    */
+
+    .section-team {
+        max-width: 580px;
+    }
+
+    /*
+    HAPPY CLIENTES
+    */
+
+    .section-reviews-text {
+        margin: 0 40px;
+    }
+
+    /*
+    PARTNERS
+    */
+
+    .section-partners {
+        gap: 40px;
+    }
+
+    .section-partners img {
+        width: 50px;
+    }
+
+    /*
+    PRICE
+    */
+
+    .card-prices {
+        flex-wrap: wrap;
+    }
+
+    /*
+    PREMIUM
+    */
+
+    .section-body.premium{
+        margin: 100px;
+    }
+
+    .section-premium {
+        gap: 40px;
+    }
+
+    /*
+    SOME FACTS
+    */
+
+    .section-some-facts {
+        flex-wrap: wrap;
+        margin: 0 100px;
+    }
+
+    /*
+    MAPS
+    */
+
+    .section-map-area {
+        margin: 0 40px;
+    }
+
+    /*
+    FOOTER
+    */
+
+    .section-footer {
+        margin: 0 40px;
+    }
+
+    .section-footer-form {
+        margin-top: 50px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 459px) {
+
+    .logo {
+        margin-left: 40px;
+    }
+
+    .menu-opener {
+        display: block;
+        width: 30px;
+        margin-right: 40px;
+    }
+
+    .header {
+        max-width: 100%;
+    }
+
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 40vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 100%;
+    }
+
+    .menu a{
+        border: 0;
+        height: 20px;
+        margin-left: 50px;
+    }
+
+        .menu a:hover {
+            color: #b78a56;
+            font-size: bold;
+            border: 0;
+        }
+
+    /*
+    BANNER
+    */    
+
+    .banner {
+        height: 100vh;
+    }
+
+    .banner h1 {
+        font-size: 38px;
+    }
+
+    /*
+    ABOUT US
+    */
+
+    .section-aboutus {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-aboutus-left {
+        margin: 0 40px 30px 40px;
+    }
+
+    .section-aboutus-right {
+        width: 100%;
+    }
+
+    .section-aboutus-right img {
+        width: 400px;
+    }
+
+    /*
+    SERVICES
+    */
+
+    .section-services {
+        flex-wrap: wrap;
+    }
+
+    .section-service {
+        min-width: 70%;
+        margin-bottom: 30px;
+    }
+
+    /*
+    OUR PROJECTS
+    */
+
+    .section-projects {
+        width: 90%;
+        margin: auto;
+    }
+
+    .section-projects-filters li {
+        padding: 10px 5px;
+    }
+
+    .section-projects-filters a {
+        font-size: 10px;
+    }
+
+    /*
+    OUR TEAM
+    */
+
+    .section-team {
+        max-width: 280px;
+    }
+
+    /*
+    HAPPY CLIENTES
+    */
+
+    .section-reviews-text {
+        margin: 0 40px;
+    }
+
+    /*
+    PARTNERS
+    */
+
+    .section-partners {
+        gap: 20px;
+    }
+
+    .section-partners img {
+        width: 50px;
+    }
+
+    /*
+    PRICE
+    */
+
+    .card-prices {
+        flex-wrap: wrap;
+    }
+
+    /*
+    PREMIUM
+    */
+
+    .section-body.premium{
+        margin: 100px;
+    }
+
+    .section-premium {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .section-premium-left img {
+        margin-bottom: 20px;
+    }
+
+    /*
+    SOCIAL MEDIA
+    */
+
+    .section-social-media {
+        gap: 0;
+        margin: 0 20px;
+    }
+
+    .section-social-share p {
+        font-size: 10px;
+    }
+
+
+    /*
+    SOME FACTS
+    */
+
+    .section-some-facts {
+        flex-wrap: wrap;
+        margin: 0 100px;
+    }
+
+    /*
+    MAPS
+    */
+
+    .section-map-info {
+        width: 80%;
+        margin: 0 30px;
+    }
+
+    /*
+    FOOTER
+    */
+
+    .section-footer {
+        flex-direction: column;
+        gap: 40px;
+        margin: 40px;
+    }
+
+    .section-footer-social-media {
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .section-footer-text {
+        text-align: center;
+    }
 }
