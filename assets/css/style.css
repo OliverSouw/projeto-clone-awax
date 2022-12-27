@@ -1188,6 +1188,14 @@ RESPONSIVIDADE ----------------------------------------------------------
 
 @media (max-width: 459px) {
 
+    .shadow {
+        box-shadow: none;
+    }
+
+    .shadow-inset {
+        box-shadow: none;
+    }
+
     .logo {
         margin-left: 40px;
     }
@@ -1241,7 +1249,7 @@ RESPONSIVIDADE ----------------------------------------------------------
     }
 
     .banner h1 {
-        font-size: 38px;
+        font-size: 30px;
     }
 
     /*
@@ -1262,7 +1270,7 @@ RESPONSIVIDADE ----------------------------------------------------------
     }
 
     .section-aboutus-right img {
-        width: 400px;
+        width: 250px;
     }
 
     /*
@@ -1288,7 +1296,7 @@ RESPONSIVIDADE ----------------------------------------------------------
     }
 
     .section-projects-filters li {
-        padding: 10px 5px;
+        display: none;
     }
 
     .section-projects-filters a {
@@ -1320,7 +1328,7 @@ RESPONSIVIDADE ----------------------------------------------------------
     }
 
     .section-partners img {
-        width: 50px;
+        width: 30px;
     }
 
     /*
@@ -1346,6 +1354,7 @@ RESPONSIVIDADE ----------------------------------------------------------
 
     .section-premium-left img {
         margin-bottom: 20px;
+        width: 150px;
     }
 
     /*
@@ -1353,14 +1362,8 @@ RESPONSIVIDADE ----------------------------------------------------------
     */
 
     .section-social-media {
-        gap: 0;
-        margin: 0 20px;
+        display: none;
     }
-
-    .section-social-share p {
-        font-size: 10px;
-    }
-
 
     /*
     SOME FACTS
@@ -1369,6 +1372,22 @@ RESPONSIVIDADE ----------------------------------------------------------
     .section-some-facts {
         flex-wrap: wrap;
         margin: 0 100px;
+    }
+
+    /*
+    CONTACT US
+    */
+
+    .form-first {
+        width: 100px;
+    }
+
+    .form-subject {
+        width: 200px;
+    }
+
+    .form-message {
+        width: 200px;
     }
 
     /*
